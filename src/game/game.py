@@ -18,6 +18,22 @@ class Game:
 
     def end(self) -> bool:
         pass
+
+    @property
+    def player1(self):
+        return self.__player1
+
+    @player1.setter
+    def player1(self, player1):
+        self.__player1 = player1
+
+    @property
+    def player2(self):
+        return self.__player2
+
+    @player2.setter
+    def player2(self, player2):
+        self.__player2 = player2
     
     def update(self) -> bool:
         self.player2.score = random() * 10
